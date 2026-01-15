@@ -1,5 +1,5 @@
 # Simple addition calculator
-print("--- Simple Calculator ---")
+print("--- Simple Addition ---")
 
 num1 = int(input("Enter first number: "))
 num2 = int(input("Enter second number: "))
