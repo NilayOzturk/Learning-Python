@@ -10,8 +10,14 @@ while True:
         print("Shopping completed! 🏁")
         break
 
-    shopping_list.append(item)
-    print(f"{item} added to cart!")
+    item = item.strip().title()
+
+    if item in shopping_list:
+        print(f"{item} is already in the list!")
+    else:
+        shopping_list.append(item) 
+        print(f"{item} added to cart!")
+    
 
 print("\n 🧾Your Shopping List🧾:")
 
