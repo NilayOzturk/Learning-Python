@@ -6,4 +6,4 @@ num2 = int(input("Enter second number: "))
 
 total = num1 + num2
 
-print(f"The result is: " + {total})
+print(f"The result is:  + {total}")
