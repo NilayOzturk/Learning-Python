@@ -1,7 +1,7 @@
 import json
 
 # 1. Elimizde bir veri var
-benim_sozlugum = {
+my_dictionary = {
     "Ad": "Ahmet",
     "Sehir": "Istanbul",
     "Yas": 25
@@ -10,15 +10,15 @@ benim_sozlugum = {
 print("Veri hazırlanıyor...")
 
 # 2. Bunu dosyaya KAYDEDİYORUZ (Write - w)
-with open("deneme.json", "w", encoding="utf-8") as dosya:
-    json.dump(benim_sozlugum, dosya)
-    print("✅ Dosya 'deneme.json' adıyla kaydedildi!")
+with open("testing.json", "w", encoding="utf-8") as file:
+    json.dump(my_dictionary, file)
+    print("✅ File named 'deneme.json' saved!")
 
 # ------------------------------------------------
 
 print("Şimdi dosyadan geri okuyoruz...")
 
 # 3. Dosyadan OKUYORUZ (Read - r)
-with open("deneme.json", "r", encoding="utf-8") as dosya:
-    okunan_veri = json.load(dosya)
-    print(f"📂 Dosyadan gelen veri: {okunan_veri}")
+with open("testing.json", "r", encoding="utf-8") as file:
+    reading_data = json.load(file)
+    print(f"📂 Data from file: {reading_data}")
