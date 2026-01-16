@@ -7,7 +7,7 @@ my_dictionary = {
     "Yas": 25
 }
 
-print("Veri hazırlanıyor...")
+print("Data is getting ready...")
 
 # 2. Bunu dosyaya KAYDEDİYORUZ (Write - w)
 with open("testing.json", "w", encoding="utf-8") as file:
@@ -16,7 +16,7 @@ with open("testing.json", "w", encoding="utf-8") as file:
 
 # ------------------------------------------------
 
-print("Şimdi dosyadan geri okuyoruz...")
+print("We are reading them back")
 
 # 3. Dosyadan OKUYORUZ (Read - r)
 with open("testing.json", "r", encoding="utf-8") as file:
